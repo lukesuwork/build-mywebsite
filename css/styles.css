@@ -1,0 +1,57 @@
+:root {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  text-align: center;
+  margin: 0 0;
+}
+
+.background-image {
+  background-color: #c7c7c7; 
+  background-image: url(../images/Home.jpg);
+  background-size: cover;
+  margin: 0 0 auto auto;
+  height: 100%;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  text-align: center;
+  font-family: "Helvetica Neue", serif;
+}
+
+h1:hover{
+  background-color: rgb(255, 239, 151);
+}
+
+.responsive-img {
+  width: 100%;
+  max-width: 2200px;
+  margin: 0;
+  height: auto;
+}
+
+.main-img {
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+.logo-img {
+  width: 100%;
+  max-width: 140px;
+  height: auto;
+  position: absolute;
+  left: 30px;
+  margin: 0;
+}
+
+#heading {
+  color: lightcoral;
+}
+
+.footer {
+  background-color: white;
+}
