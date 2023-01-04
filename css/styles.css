@@ -1,29 +1,57 @@
-:root {
-  font-family: 'Lato', sans-serif;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
+/* Custom Properties */
+:root {
+  font-family: 'Lato', sans-serif;
+  --fontsize-h1: 3rem;
+  --fontsize-h2: 2rem;
+  --fontsize-h3: 1rem;
+  --fontsize-h4: .75rem;
+
+  --fw-reg: 300;
+  --fw-bold: 1000;
+
+  --color-light: #fff;
+  --color-dark: #303030;
+  --color-accent: rgb(202, 171, 59);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fontsize-h1: 4.5rem;
+    --fontsize-h2: 3.75rem;
+    --fontsize-h3: 1.5rem;
+    --fontsize-body: 1.125rem;
+  }
+}
+nav { display: none;}
 body {
   text-align: center;
   margin: 0 0;
+  overflow-wrap: break-word;
 }
 
 .background-image {
   background-color: #c7c7c7; 
   background-image: url(../images/Home.jpg);
   background-size: cover;
+  background-attachment: fixed;
   margin: 0 0 auto auto;
   height: 100%;
 }
 
-h1 {
+.title_link {
+  background: var(--color-dark);
   color: rgb(255, 255, 255);
-  font-size: 80px;
-  text-align: center;
-  font-family: "Helvetica Neue", serif;
+  font-size: var(--font-size-h1);
+  text-align: center; 
 }
 
 h1:hover{
   background-color: rgb(255, 239, 151);
+  font-weight: var(--fontweight-bold);
 }
 
 .responsive-img {
@@ -41,17 +69,14 @@ h1:hover{
 
 .logo-img {
   width: 100%;
-  max-width: 140px;
+  max-width: 120px;
   height: auto;
   position: absolute;
   left: 30px;
   margin: 0;
 }
 
-#heading {
-  color: lightcoral;
-}
-
 .footer {
-  background-color: white;
+  background-color: rgb(46, 46, 46);
+  font-size: var(--fontsize-h4);
 }
