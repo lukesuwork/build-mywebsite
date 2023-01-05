@@ -181,26 +181,10 @@ strong {
 
 /* Video Page */
 
-.video_page {
-}
 
-.video_content {
-  padding: 10%;
-  position: relative;
-  display: flex;
-}
-
-.video_embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-}
 
 
 /* Photo Page */
-
 
 .gallery {
   display: flex;
